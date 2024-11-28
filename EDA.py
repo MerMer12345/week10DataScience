@@ -48,7 +48,7 @@ if not categorical_df.empty:
     for col in categorical_df.columns:
         plt.figure(figsize=(8, 4))
         # Set hue=None to avoid the warning
-        sns.countplot(data=df, x=col, hue= None, palette='viridis')
+        sns.countplot(data=df, x=col, palette='viridis')
         plt.title(f'Count Plot of {col}')
         plt.xlabel(col)
         plt.ylabel('Count')
